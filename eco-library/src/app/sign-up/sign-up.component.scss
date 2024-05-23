@@ -22,6 +22,10 @@ body {
     margin: 0;
 }
 
+h1 {
+    color: #063F71;
+}
+
 img {
     height: 300px;
     max-width: 100%;
@@ -31,10 +35,24 @@ img {
     text-align: center;
 
     .form-group {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         margin-bottom: 10px;
     }
 
+    i {
+        padding-top: 15px;
+        margin: 10px;
+    }
+
     input, button {
-        margin-top: 10px;
+        margin-top: 15px;
+        border-radius: 20px;
+    }
+    
+    button {
+        background-color: #58E4A0;
+        border-color: #58E4A0;
     }
 }
