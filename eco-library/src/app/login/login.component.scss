@@ -1,106 +1,78 @@
-$primary-color: #3aaf67;
-$secondary-color: #b1ebcf; // Updated background color
-$text-color: #f1dddd;
-$background-color: #489f78;
-$input-background: #f9f9f9;
-$input-border: #dddddd;
-
-body {
-  background-color: $secondary-color;
+.body {
+  background-color: #b1ebcf; // Couleur de fond du corps
 }
 
-.container-fluid {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.myform {
+  background-color: white; // Couleur de fond du formulaire
+  height: 600px; // Hauteur du formulaire
+  border-radius: 5px; // Bords arrondis du formulaire
 
-  .login-box {
-    width: 100%;
-    max-width: 1000px; // Adjusted max-width to be more moderate
-    max-height: 600px; // Adjusted max-height to be more moderate
-    height: 80vh; // Adjusted height to be more moderate
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  .img-login {
+    border-radius: 5px; // Bords arrondis de l'image
+    margin-left: 20px; // Marge à gauche de l'image
+  }
 
-    .text-white {
-      background-color: $background-color;
-      color: $text-color;
-      padding: 2rem;
-      height: 100%; // Ensure it takes full height of the container
+  .login-h1 {
+    color: white; // Couleur du texte
+
+    h2 {
+      font-weight: bold; // Texte en gras pour le titre
     }
+  }
 
-    form {
-      width: 100%;
+  input {
+    width: 100%; // Largeur à 100% pour les champs de saisie
+    border-radius: 50vmax; // Bords très arrondis pour les champs de saisie
+  }
 
-      .form-group {
-        display: flex;
-        align-items: center;
-        margin-bottom: 1rem;
-
-        i {
-          color: $primary-color;
-          margin-right: 0.5rem;
-        }
-
-        .form-control {
-          background-color: $input-background;
-          border: 1px solid $input-border;
-          border-radius: 20px;
-          padding: 0.75rem 1rem;
-          width: 100%;
-        }
-      }
-
-      .btn-primary {
-        background-color: $primary-color;
-        border: none;
-        border-radius: 20px;
-        padding: 0.75rem 1rem;
-        font-size: 1rem;
-        width: 100%;
-        transition: background-color 0.3s ease;
-
-        &:hover {
-          background-color: darken($primary-color, 10%);
-        }
-      }
-    }
-
-    .illustration {
-      background-color: $text-color;
-      img {
-        max-width: 100%;
-        height: auto;
-      }
-    }
+  .login-btn {
+    width: 100%; // Largeur à 100% pour le bouton de connexion
+    padding: 10px; // Rembourrage du bouton
+    border: none; // Pas de bordure pour le bouton
+    border-radius: 50vmax; // Bords très arrondis pour le bouton
+    background-color: #0f9d58; // Couleur verte pour le bouton
+    color: white; // Couleur du texte du bouton
+    font-size: 16px; // Taille de la police du bouton
   }
 }
 
-@media (max-width: 767.98px) {
-  .container-fluid {
-    .login-box {
-      flex-direction: column;
+.prancipal {
+  width: 70%; // Largeur à 70%
 
-      .illustration {
-        order: -1;
-        margin-bottom: 2rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-    }
+  .formLogin {
+    background-color: #489f78; // Couleur de fond du formulaire de connexion
+    border-radius: 5px; // Bords arrondis du formulaire de connexion
   }
 }
 
-@media (min-width: 768px) and (max-width: 991.98px) {
-  .container-fluid {
-    .login-box {
-      .text-white, .illustration {
-        width: 100%;
-        max-width: 50%;
-      }
+@media (max-width: 600px) {
+  .prancipal {
+    background-color: white; // Couleur de fond pour l'élément principal en mode mobile
+    width: 100%; // Largeur à 100% en mode mobile
+
+    .myform {
+      width: 100%; // Largeur à 100% pour le formulaire en mode mobile
+    }
+  }
+
+  .body {
+    background-color: white; // Couleur de fond pour le corps en mode mobile
+  }
+
+  .formLogin {
+    background-color: #b1ebcf; // Couleur de fond du formulaire de connexion en mode mobile
+  }
+
+  .login-h1 {
+    position: absolute; // Position absolue pour l'en-tête de connexion
+    top: 80px; // Position en haut à 80px
+
+    h2 {
+      color: #489f78; // Couleur du titre en mode mobile
+    }
+
+    p {
+      color: #489f78; // Couleur du paragraphe en mode mobile
     }
   }
 }
