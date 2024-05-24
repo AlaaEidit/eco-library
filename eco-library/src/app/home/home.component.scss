@@ -1,0 +1,31 @@
+$font-color: #1B4F08;
+$color-bg-bt:#58E4A0;
+$my-color:#73866D;
+$my1-color:#BED3C3;
+$my2-color:#D9EAD3;
+
+.mynavbar{
+  background-color: $my1-color;
+  width: 100%;
+  height: 270px;
+  padding-top: 20px;
+  position: fixed;
+}
+.img-cont{
+  display: flex;
+  gap: 20px;
+
+  img{
+    width: 70px;
+    height: 70px;
+  }
+  h3{
+    margin-top: 10px;
+    color: #1B4F08;
+    margin-bottom: 0;
+  }
+  p{
+    color: #1B4F08;
+  }
+  
+}
