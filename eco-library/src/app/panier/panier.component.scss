@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Indie+Flower&family=Poppins&family=Schoolbell&display=swap');
+
+* {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    width: 100%;
+}
+
+header {
+    background-color: #BED3C3;
+    padding: 30px;
+}
+
+header h3 {
+    font-size: 25px;
+    font-weight: 600;
+    color: #1B4F08;
+}
+
+header .btn {
+    background-color: #58E4A0;
+    border-color: #58E4A0;
+    font-weight: 700;
+    font-size: 17px;
+    height: 50px;
+}
+
+header .header-icon {
+    padding: 10px;
+}
+
+.container .img-fluid {
+    background-color: #58E4A0;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+.container h4 {
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.row .card {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    height: 200px;
+}
+
+.row h3{
+    margin-top: -20px;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.row .details-product {
+    justify-content: space-between;
+}
+
+.row .add-remove {
+    margin: 20px 0;
+}
+
+.row .add-remove h4 {
+    margin: 5px;
+}
+
+
+.row .add-remove .bg-color {
+    background-color: #58E4A0;
+    padding: 3px 8px;
+    border-radius: 10px;
+}
+
+.row .product-coin h4 {
+    padding: 5px 40px;
+    border: 1px solid rgb(227, 227, 227);
+    border-radius: 10px;
+}
+
+.row .product-coin h4 img {
+    position: absolute;
+    right: 12px;
+    bottom: 5px;
+}
+
+
+.container .row i {
+    background-color: #66769A;
+    margin: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+}
+
+.btn-nav {
+    margin-top: 10px;
+    margin-bottom: 140px;
+    background-color: #58E4A0;
+    border-color: #58E4A0;
+    color: black;
+    font-weight: 600;
+}
+
+.navbar {
+    background-color: #BED3C3;
+    height: 100px;
+}
+
+.navbar a{
+    color: #1B4F08;
+    font-weight: 500;
+    margin: -5px;
+}
+
+.navbar i {
+    color: #1B4F08;
+}
+
+.navbar-nav .nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
