@@ -1,31 +1,251 @@
 $font-color: #1B4F08;
-$color-bg-bt:#58E4A0;
-$my-color:#73866D;
-$my1-color:#BED3C3;
-$my2-color:#D9EAD3;
+$color-bg-bt: #58E4A0;
+$my-color: #73866D;
+$my1-color: #BED3C3;
+$my2-color: #D9EAD3;
 
-.mynavbar{
+body{
+  background-color: white;
+}
+.mynavbar {
   background-color: $my1-color;
   width: 100%;
-  height: 270px;
+  height: 200px;
   padding-top: 20px;
-  position: fixed;
 }
-.img-cont{
-  display: flex;
-  gap: 20px;
 
-  img{
+.img-cont {
+  display: flex;
+  gap: 10px;
+
+  img {
     width: 70px;
     height: 70px;
   }
-  h3{
+
+  h3 {
     margin-top: 10px;
-    color: #1B4F08;
+    color: $font-color;
     margin-bottom: 0;
   }
-  p{
-    color: #1B4F08;
+
+  p {
+    color: $font-color;
   }
+}
+
+// Début de l'élément tem
+.bg-itm{
+  width: 100%;
+}
+.tem1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color:white;
+
+  h3 {
+    font-weight: 600;
+    margin: 10px;
+    color: $font-color;
+  }
+   a{
+    text-decoration: none;
+   }
+  span {
+    color: $font-color;
+    text-decoration: none;
+  }
+}
+
+// Début de l'en-tête
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  button {
+    width: 100px;
+    background-color: $color-bg-bt;
+    border-radius: 0;
+    color: white;
+  }
+
+  h3 {
+    color: $font-color;
+  }
+
+  p {
+    color: $font-color;
+  }
+}
+
+// Fin de l'en-tête
+
+.pruduct{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1300px;
+  margin: 10px auto 0;
+  gap: 20px;
+
+  .item-1{
+    text-align: center;
+    padding-top: 10px;
+    background-color: #58E4A0;
+    width: 85px;
+    height: 90px;
+    cursor: pointer;
+  }
+}
+
+// Début de best
+.heder-best{
+  width: 100%;
+  height: 60px;
+  background-color: #1B4F08;
+  margin-top: 60px;
+
+  .taitle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h3 {
+      font-weight: 600;
+      margin: 10px;
+      color: white;
+    }
+    
+    a{
+      text-decoration: none;
+    }
+
+    span {
+      color: white;
+      text-decoration: none;
+    }
+  }
+
+
+}
+
+@media (min-width: 992px) {
+  .serch{
+    position: absolute;
+    top: 170px;
+    left: 40%;
+
+    input{
+      border-radius: 50vmax;
+      width: 300px;
+      border: solid 1px #58E4A0;
+      padding: 5px;
+    }
+
+    button{
+      width: 80px; // Largeur à 100% pour le bouton de connexion
+      padding: 5px;
+      margin: 10px; // Rembourrage du bouton
+      border: none; // Pas de bordure pour le bouton
+      border-radius: 50vmax; // Bords très arrondis pour le bouton
+      background-color: #0f9d58; // Couleur verte pour le bouton
+      color: white; // Couleur du texte du bouton
+      font-size: 16px;
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .serch{
+    position: absolute;
+    top: 170px;
+    left: 80px;
+
+    input{
+      border-radius: 50vmax;
+      width: 150px;
+      border: solid 1px #58E4A0;
+      padding: 5px;
+    }
+
+    button{
+      width: 80px; // Largeur à 100% pour le bouton de connexion
+      padding: 5px;
+      margin: 10px; // Rembourrage du bouton
+      border: none; // Pas de bordure pour le bouton
+      border-radius: 50vmax; // Bords très arrondis pour le bouton
+      background-color: #0f9d58; // Couleur verte pour le bouton
+      color: white; // Couleur du texte du bouton
+      font-size: 16px;
+    }
+  }
+}
+
+@media (max-width: 991.98px){
+  .serch{
+    position: absolute;
+    top: 170px;
+    left: 70px;
+
+    input{
+      border-radius: 50vmax;
+      width: 200px;
+      border: solid 1px #58E4A0;
+      padding: 5px;
+    }
+
+    button{
+      width: 80px; // Largeur à 100% pour le bouton de connexion
+      padding: 5px;
+      margin: 10px; // Rembourrage du bouton
+      border: none; // Pas de bordure pour le bouton
+      border-radius: 50vmax; // Bords très arrondis pour le bouton
+      background-color: #0f9d58; // Couleur verte pour le bouton
+      color: white; // Couleur du texte du bouton
+      font-size: 16px;
+    }
+  }
+}
+
+.navbar {
+  position: fixed;
+  z-index: 1000;
+  top: 260px;
+  background-color:#73866D; // Correspond à la couleur de fond comme sur l'image
   
+  .navbar-brand {
+    color: #004d00; // Couleur vert foncé pour le texte
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    i {
+      font-size: 1.5rem;
+    }
+
+    div {
+      font-size: 0.9rem;
+    }
+    
+    &:hover {
+      color: #004d00; // Maintenir la couleur au survol
+    }
+  }
+}
+
+@media (min-width: 992px){
+  .navbar{
+    display: none;
+  }
+}
+
+@media (max-width: 991.98px){
+  .navbar{
+    position: relative;
+    top: 420px;
+  }
 }
