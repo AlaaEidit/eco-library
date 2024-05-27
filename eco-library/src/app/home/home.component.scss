@@ -3,6 +3,9 @@ $color-bg-bt: #58E4A0;
 $my-color: #73866D;
 $my1-color: #BED3C3;
 $my2-color: #D9EAD3;
+$button-background-color: #5CDB95;
+$button-hover-color: #45a049;
+$button-text-color: #ffffff;
 
 body{
   background-color: white;
@@ -276,8 +279,34 @@ margin-top: -40px;;
 }
 .bg-best{
   
-  margin-top: à;;
   background-color:$my1-color;
   width: 100%;
   height: 41vh;
+
+  .img-item{
+    padding-top: 30px;
+     img{
+      height: 250px;
+     }
+     .add{
+      position: relative;
+      left: 80px;
+      bottom: 40px;
+      background-color: $button-background-color;
+      color: $button-text-color;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      display: inline-block;
+      font-size: 30px;
+      padding: 0px 10px;
+      text-align: center;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    
+      &:hover {
+        background-color: $button-hover-color;
+      }
+    }
+  }
 }
