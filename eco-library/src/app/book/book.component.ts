@@ -3,10 +3,19 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-book',
   standalone: true,
-  imports: [],
   templateUrl: './book.component.html',
-  styleUrl: './book.component.scss'
+  styleUrls: ['./book.component.scss']
 })
 export class BookComponent {
+  quantity: number = 1;
 
+  increaseQuantity() {
+    this.quantity++;
+  }
+
+  decreaseQuantity() {
+    if (this.quantity > 1) {
+      this.quantity--;
+    }
+  }
 }
