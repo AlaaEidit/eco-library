@@ -83,6 +83,7 @@ body{
 // Fin de l'en-tête
 
 .pruduct{
+  height: 20vh;
   display: flex;
   flex-wrap: wrap;
   width: 100%;
@@ -247,5 +248,22 @@ body{
   .navbar{
     position: relative;
     top: 420px;
+  }
+}
+
+@media (max-width: 767.98px){
+  .heder-best{
+    background-color: white;
+   
+    .taitle{
+      h3{
+        color: black;
+      }
+      a{
+        span{
+          color: black;
+        }
+      }
+    }
   }
 }
