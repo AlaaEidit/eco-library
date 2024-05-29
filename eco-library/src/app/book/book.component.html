@@ -1,0 +1,51 @@
+<body>
+    <div class="book-card ">
+        <div class="img-book">
+            <img src="assets/Images/book.jpg"  alt="Harry Potter">
+        </div>
+        <div class="book-details">
+          <h2>Harry Potter <span class="price">25 Ecocoin</span></h2>
+          <div class="rating">
+            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+          </div>
+          <p class="description">
+            Le jour de ses onze ans, Harry Potter, un orphelin élevé par un oncle et une tante qui le détestent, voit son existence bouleversée.
+          </p>
+          <div class="quantity-selector">
+            <button (click)="decreaseQuantity()">-</button>
+            <input type="text" [value]="quantity" readonly>
+            <button (click)="increaseQuantity()">+</button>
+          </div>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+</body>
+  <!-- Début de la barre de navigation en bas -->
+  <div class="test"></div>
+  <div >
+    <nav class="navbar d-flex">
+      <div class="container-fluid justify-content-around">
+        <a class="navbar-brand text-center" href="#">
+          <i class="fas fa-user"></i>
+          <div>Profile</div>
+        </a>
+        <a class="navbar-brand text-center" href="#">
+          <i class="fas fa-shopping-cart"></i>
+          <div>Cart</div>
+        </a>
+        <a class="navbar-brand text-center" href="#">
+          <i class="fas fa-home"></i>
+          <div>Home</div>
+        </a>
+        <a class="navbar-brand text-center" href="#">
+          <i class="fas fa-heart"></i>
+          <div>Favorite</div>
+        </a>
+        <a class="navbar-brand text-center" href="#">
+          <i class="fas fa-inbox"></i>
+          <div>Inbox</div>
+        </a>
+      </div>
+    </nav>
+  </div>
+  <!-- Fin de la barre de navigation en bas -->

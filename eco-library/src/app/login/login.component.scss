@@ -1,0 +1,113 @@
+.body {
+  background-color: #b1ebcf; // Couleur de fond du corps
+  text-decoration: none;
+
+}
+
+.myform {
+  background-color: white; // Couleur de fond du formulaire
+  height: 600px; // Hauteur du formulaire
+  border-radius: 5px; // Bords arrondis du formulaire
+     .logo{
+    position: relative;
+    left:260px;
+    bottom: 110px;
+     }
+  .img-login {
+    border-radius: 10px; // Bords arrondis de l'image
+    margin: 50px;
+  }
+
+  .login-h1 {
+    color: white; // Couleur du texte
+
+    h2 {
+      font-weight: bold; // Texte en gras pour le titre
+    }
+    
+      a{
+       text-decoration: none;
+       color:white;
+      } // Couleur du paragraphe en mode mobile
+   
+  }
+
+  input {
+    width: 100%; // Largeur à 100% pour les champs de saisie
+    border-radius: 50vmax; // Bords très arrondis pour les champs de saisie
+  }
+
+  .login-btn {
+    width: 100%; // Largeur à 100% pour le bouton de connexion
+    padding: 10px; // Rembourrage du bouton
+    border: none; // Pas de bordure pour le bouton
+    border-radius: 50vmax; // Bords très arrondis pour le bouton
+    background-color: #0f9d58; // Couleur verte pour le bouton
+    color: white; // Couleur du texte du bouton
+    font-size: 16px; // Taille de la police du bouton
+  }
+}
+
+.prancipal {
+  width: 70%; // Largeur à 70%
+  border-radius: 5px;
+
+  .formLogin {
+    background-color: #489f78; // Couleur de fond du formulaire de connexion
+    border-radius: 5px; // Bords arrondis du formulaire de connexion
+  }
+}
+
+@media (max-width: 600px) {
+  .prancipal {
+    background-color: white; // Couleur de fond pour l'élément principal en mode mobile
+    width: 100%; // Largeur à 100% en mode mobile
+    .formLogin {
+      background-color:white; // Couleur de fond du formulaire de connexion en mode mobile
+    }
+    .myform {
+      width: 100%;
+      background-color: white; // Largeur à 100% pour le formulaire en mode mobile
+      .login-btn{
+        background-color: #489f78;
+      }
+    .logo{
+      display: none;
+    }
+      
+    }
+    i{
+      color: #489f78;
+    }
+  }
+
+  .body {
+    background-color: white; // Couleur de fond pour le corps en mode mobile
+  }
+
+ 
+
+  .login-h1 {
+    position: absolute; // Position absolue pour l'en-tête de connexion
+    top: 80px; // Position en haut à 80px
+    color: #489f78;
+
+    h2 {
+      color: #489f78; // Couleur du titre en mode mobile
+    }
+    p{
+      color: #489f78;
+      a{
+        color: #489f78;
+        
+      }
+    }
+
+   
+  }
+}
+@media  (max-width: 1800px){
+  .logo{
+   display: none;
+  }
+}

@@ -1,0 +1,33 @@
+<div class="body">
+  <!-- Conteneur principal avec flexbox pour centrer verticalement et horizontalement -->
+  <div class=" prancipal container-fluid  vh-100">
+    <!-- Formulaire de connexion et image alignés côte à côte en mode bureau -->
+    <div class="myform row login-box w-100 rounded">
+      <!-- Colonne pour l'image de connexion -->
+      <div class=" rounded col-md-6 illustration d-flex align-items-center justify-content-center bg-white">
+        <img src="assets/Images/login-img.webp" alt="Login Image" class="rounded img-fluid img-login">
+      </div>
+      <!-- Colonne pour le formulaire de connexion -->
+      <div class="formLogin col-md-6 d-flex flex-column align-items-center justify-content-center text-white p-5">
+        <!-- En-tête du formulaire de connexion -->
+        <div class="login-h1 text-center mb-4">
+          <img src="assets/Images/feuille.png" alt="logo" class="logo img-fluid" width="75px" >
+          <h2>Login</h2>
+          <a href="#"> <p>Sign in to continue</p></a>
+        </div>
+        <!-- Formulaire avec champs d'entrée et bouton de connexion -->
+        <form class="w-100">
+          <div class="form-group mb-3 d-flex align-items-center">
+            <i class="fas fa-user fa-lg me-2"></i>
+            <input type="email" class="form-control" placeholder="Email">
+          </div>
+          <div class="form-group mb-3 d-flex align-items-center">
+            <i class="fas fa-lock fa-lg me-2"></i>
+            <input type="password" class="form-control" placeholder="Password">
+          </div>
+          <button type="submit" class="btn login-btn">Login</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

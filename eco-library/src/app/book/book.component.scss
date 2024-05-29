@@ -1,0 +1,165 @@
+.book-card {
+  background-color: white;
+  padding: 20px;
+  max-width: 400px;
+  margin: 55px auto;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+}
+
+.img-book {
+  display: flex;
+  justify-content: center;
+}
+
+.img-book img {
+  width: 250px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+}
+
+.book-details {
+  padding: 20px;
+}
+
+.book-details h2 {
+  font-size: 1.5em;
+  color: #1B4F08;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.book-details .price {
+  font-size: 1em;
+  color: #000;
+}
+
+.book-details .rating {
+  margin: 10px 0;
+  color: #FFA500;
+}
+
+.book-details .description {
+  font-size: 0.9em;
+  color: #73866D;
+  margin: 10px 0;
+}
+
+.book-details .quantity-selector {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.book-details .quantity-selector button {
+  background-color: #BED3C3;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.book-details .quantity-selector button:hover {
+  background-color: #A0C4B8;
+}
+
+.book-details .quantity-selector input {
+  width: 30px;
+  text-align: center;
+  border: 1px solid #D9EAD3;
+  margin: 0 5px;
+  padding: 5px;
+  font-size: 1em;
+}
+
+.book-details .add-to-cart {
+  background-color: #5CDB95;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 1em;
+  width: 100%;
+  text-align: center;
+  transition: background-color 0.3s;
+  border-radius: 3px;
+}
+
+.book-details .add-to-cart:hover {
+  background-color: #45a049;
+}
+
+// Media queries for responsiveness
+@media (max-width: 768px) {
+  .book-card {
+    max-width: 100%;
+    margin: 10px;
+  }
+
+  .book-details {
+    padding: 15px;
+  }
+
+  .book-details h2 {
+    font-size: 1.2em;
+  }
+
+  .book-details .price {
+    font-size: 0.9em;
+  }
+
+  .book-details .description {
+    font-size: 0.8em;
+  }
+
+  .book-details .quantity-selector button,
+  .book-details .quantity-selector input {
+    font-size: 0.9em;
+  }
+
+  .book-details .add-to-cart {
+    font-size: 0.9em;
+  }
+}
+
+.navbar {
+  background-color: #73866D;
+}
+
+.navbar-brand {
+  color: #004d00;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar-brand i {
+  font-size: 1.5rem;
+}
+
+.navbar-brand div {
+  font-size: 0.9rem;
+}
+
+.navbar-brand:hover {
+  color: #004d00;
+}
+
+.fixed-navbar {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+@media (max-width: 767.98px){
+  .navbar{
+     position: relative;
+     top: 90px;
+  }
+}
