@@ -38,9 +38,9 @@ body {
   }
 }
 
-// Début de l'élément tem
 .bg-itm {
   width: 100%;
+  margin-top: 10px; /* Pour éviter que le contenu soit masqué sous la navbar */
 }
 
 .tem1 {
@@ -65,7 +65,6 @@ body {
   }
 }
 
-// Début de l'en-tête
 .header {
   display: flex;
   justify-content: space-between;
@@ -87,10 +86,8 @@ body {
   }
 }
 
-// Fin de l'en-tête
-
 .pruduct {
-  height: 20vh;
+  padding-bottom: 30px;
   display: flex;
   flex-wrap: wrap;
   width: 100%;
@@ -108,12 +105,10 @@ body {
   }
 }
 
-// Début de best
 .heder-best {
   width: 100%;
   height: 60px;
   background-color: #1B4F08;
-  margin-top: 60px;
 
   .taitle {
     display: flex;
@@ -137,178 +132,124 @@ body {
   }
 }
 
-@media (min-width: 992px) {
+.serch {
+  position: absolute;
+  top: 170px;
+  left: 40%;
+  z-index: 9999;
+}
+
+.serch input {
+  border-radius: 50vmax;
+  width: 300px;
+  border: solid 1px $color-bg-bt;
+  padding: 5px;
+}
+
+.serch button {
+  width: 80px;
+  padding: 5px;
+  margin: 10px;
+  border: none;
+  border-radius: 50vmax;
+  background-color: #0f9d58;
+  color: white;
+  font-size: 16px;
+}
+
+@media (max-width: 991.98px) {
   .serch {
-    position: absolute;
     top: 170px;
-    left: 40%;
+    left: 70px;
 
     input {
-      border-radius: 50vmax;
-      width: 300px;
-      border: solid 1px #58E4A0;
-      padding: 5px;
-    }
-
-    button {
-      width: 80px; // Largeur à 100% pour le bouton de connexion
-      padding: 5px;
-      margin: 10px; // Rembourrage du bouton
-      border: none; // Pas de bordure pour le bouton
-      border-radius: 50vmax; // Bords très arrondis pour le bouton
-      background-color: #0f9d58; // Couleur verte pour le bouton
-      color: white; // Couleur du texte du bouton
-      font-size: 16px;
+      width: 200px;
     }
   }
 }
 
 @media (max-width: 767.98px) {
   .serch {
-    position: absolute;
     top: 170px;
     left: 80px;
 
     input {
-      border-radius: 50vmax;
       width: 150px;
-      border: solid 1px #58E4A0;
-      padding: 5px;
-    }
-
-    button {
-      width: 80px; // Largeur à 100% pour le bouton de connexion
-      padding: 5px;
-      margin: 10px; // Rembourrage du bouton
-      border: none; // Pas de bordure pour le bouton
-      border-radius: 50vmax; // Bords très arrondis pour le bouton
-      background-color: #0f9d58; // Couleur verte pour le bouton
-      color: white; // Couleur du texte du bouton
-      font-size: 16px;
     }
   }
-}
 
-@media (max-width: 991.98px) {
-  .serch {
-    position: absolute;
-    top: 170px;
-    left: 70px;
+  .heder-best {
+    background-color: white;
 
-    input {
-      border-radius: 50vmax;
-      width: 200px;
-      border: solid 1px #58E4A0;
-      padding: 5px;
-    }
-
-    button {
-      width: 80px; // Largeur à 100% pour le bouton de connexion
-      padding: 5px;
-      margin: 10px; // Rembourrage du bouton
-      border: none; // Pas de bordure pour le bouton
-      border-radius: 50vmax; // Bords très arrondis pour le bouton
-      background-color: #0f9d58; // Couleur verte pour le bouton
-      color: white; // Couleur du texte du bouton
-      font-size: 16px;
+    .taitle h3,
+    .taitle a span {
+      color: black;
     }
   }
 }
 
 .navbar {
+  background-color: $my-color;
+  width: 100%;
+  height: 80px;
   position: fixed;
+  bottom: 0;
+  left: 0;
   z-index: 1000;
-  top: 260px;
-  height: 90px;
-  background-color: $my-color; // Correspond à la couleur de fond comme sur l'image
-
-  .navbar-brand {
-    color: #004d00; // Couleur vert foncé pour le texte
-    font-size: 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    i {
-      font-size: 1.5rem;
-    }
-
-    div {
-      font-size: 0.9rem;
-    }
-
-    &:hover {
-      color: #004d00; // Maintenir la couleur au survol
-    }
-  }
 }
 
-@media (min-width: 992px) {
-  .navbar {
-    position: absolute;
-    left: 1300px;
-    background-color: $my1-color;
-    top: 20px;
-  }
+.navbar-brand {
+  color: #004d00;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-@media (max-width: 991.98px) {
-  .navbar {
-    position: relative;
-    top: 420px;
-  }
+.navbar-brand i {
+  font-size: 1.5rem;
 }
 
-@media (max-width: 767.98px) {
-  .heder-best {
-    background-color: white;
+.navbar-brand div {
+  font-size: 0.9rem;
+}
 
-    .taitle {
-      h3 {
-        color: black;
-      }
-      a {
-        span {
-          color: black;
-        }
-      }
-    }
-  }
-  .bg-best {
-    margin-top: -40px;
-  }
+.navbar-brand:hover {
+  color: #004d00;
 }
 
 .bg-best {
   background-color: $my1-color;
   width: 100%;
-  height: 41vh;
+  height: 50vh;
+}
 
-  .img-item {
-    padding-top: 30px;
-    img {
-      height: 250px;
-    }
-    .add {
-      position: relative;
-      left: 80px;
-      bottom: 40px;
-      background-color: $button-background-color;
-      color: $button-text-color;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      display: inline-block;
-      font-size: 30px;
-      padding: 0px 10px;
-      text-align: center;
-      text-decoration: none;
-      transition: background-color 0.3s;
+.bg-best .img-item {
+  padding-top: 30px;
+}
 
-      &:hover {
-        background-color: $button-hover-color;
-      }
-    }
-  }
+.bg-best .img-item img {
+  height: 250px;
+}
+
+.bg-best .img-item .add {
+  position: relative;
+  left: 80px;
+  bottom: 40px;
+  background-color: $button-background-color;
+  color: $button-text-color;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 30px;
+  padding: 0px 10px;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.bg-best .img-item .add:hover {
+  background-color: $button-hover-color;
 }
